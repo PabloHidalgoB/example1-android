@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Example1</string>
-    <string name="button1">Boton 1</string>
-    <string name="button2">Boton 2</string>
-    <string name="button3">Boton 3</string>
-    <string name="button4">Boton 4</string>
+    <string name="button1">Alert</string>
+    <string name="button2">Toggle</string>
+    <string name="button3">Show</string>
+    <string name="button4">Close</string>
 </resources>

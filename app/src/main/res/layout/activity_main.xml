@@ -40,26 +40,28 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btm_button1"
+                android:id="@+id/btn_button1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/button1"
-                />
+                android:text="@string/button1" />
 
             <Button
+                android:id="@+id/btn_button2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/button2" />
 
             <Button
+                android:id="@+id/btn_button3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/button3" />
 
             <Button
+                android:id="@+id/btn_button4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -68,6 +70,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lyt_middle"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:background="@android:color/holo_blue_dark"
@@ -107,6 +110,68 @@
         android:layout_height="match_parent"
         android:background="@android:color/holo_green_light">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_dark"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btn_mccree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/mccree" />
+
+                <ImageButton
+                    android:id="@+id/btn_zenyatta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/zenyatta" />
+
+                <ImageButton
+                    android:id="@+id/btn_soldier76"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/soldier76" />
+
+                <ImageButton
+                    android:id="@+id/btn_genji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/genji" />
+
+                <ImageButton
+                    android:id="@+id/btn_reinhardt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/reinhardt" />
+
+                <ImageButton
+                    android:id="@+id/btn_rubberduck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/rubberduck" />
+
+                <ImageButton
+                    android:id="@+id/btn_pachimari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/pachimari" />
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 </LinearLayout>
