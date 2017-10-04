@@ -170,6 +170,13 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:src="@drawable/pachimari" />
+
+                <ImageButton
+                    android:id="@+id/btn_pingu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/pingu" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

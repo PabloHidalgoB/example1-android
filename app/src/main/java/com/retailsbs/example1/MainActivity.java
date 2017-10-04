@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btn_reinhardt;
     private ImageButton btn_rubberduck;
     private ImageButton btn_pachimari;
+    private ImageButton btn_pingu;
 
 
 
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         btn_reinhardt = (ImageButton) findViewById(R.id.btn_reinhardt);
         btn_rubberduck = (ImageButton) findViewById(R.id.btn_rubberduck);
         btn_pachimari = (ImageButton) findViewById(R.id.btn_pachimari);
+        btn_pingu = (ImageButton) findViewById(R.id.btn_pingu);
+
 
         final MediaPlayer mccree = MediaPlayer.create(this, R.raw.mccree);
         final MediaPlayer zenyatta = MediaPlayer.create(this, R.raw.zenyatta);
@@ -58,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         final MediaPlayer reinhardt = MediaPlayer.create(this, R.raw.reinhardt);
         final MediaPlayer rubberduck = MediaPlayer.create(this, R.raw.duck);
         final MediaPlayer pachimari = MediaPlayer.create(this, R.raw.pachimari);
+        final MediaPlayer pingu = MediaPlayer.create(this, R.raw.pingu);
 
 
         btn_button1.setOnClickListener(new View.OnClickListener() {
@@ -108,8 +112,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mccree.start();
-                Toast.makeText(getApplicationContext(), "Howdy",
-                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -117,8 +119,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 zenyatta.start();
-                Toast.makeText(getApplicationContext(), "Be one with the universe",
-                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -126,8 +126,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 soldier76.start();
-                Toast.makeText(getApplicationContext(), "I've got you in my sights",
-                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -135,8 +133,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 genji.start();
-                Toast.makeText(getApplicationContext(), "MADA MADA!",
-                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -144,8 +140,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 reinhardt.start();
-                Toast.makeText(getApplicationContext(), "Hello!",
-                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -153,8 +147,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 rubberduck.start();
-                Toast.makeText(getApplicationContext(), "Quack :V",
-                        Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -162,8 +154,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 pachimari.start();
-                Toast.makeText(getApplicationContext(), "*squeak*",
-                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btn_pingu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pingu.start();
             }
         });
     }
